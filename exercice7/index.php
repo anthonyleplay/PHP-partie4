@@ -1,8 +1,22 @@
 <?php
-$nombre = 0;
-while ($nombre < 10) {
-    $nombre ++;
-    } ;
+function myfunction($age, $gender) {
+    switch ($gender) {
+        case "Homme":
+            if ($age >= 18) {
+                return "Vous êtes un homme et vous êtes majeur<br>";
+            }else{
+                return "Vous êtes un homme et vous êtes mineur<br>";
+            }
+          break;
+        case "Femme":
+            if ($age >= 18) {
+                return "Vous êtes une femme et vous êtes majeure<br>";
+            }else {
+                return "Vous êtes une femme et vous êtes mineur<br>";
+            }
+          break;
+        }
+    }
 ?>
 
 
@@ -13,22 +27,28 @@ while ($nombre < 10) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exo1</title>
+    <title>exo7</title>
 </head>
 
 <body>
-    <h1>Exercice 1</h1>
+    <h1>Exercice 7</h1>
 
-    <p>Créer une variable et l'initialiser à 0. <br>
-        Tant que cette variable n'atteint pas 10, il faut :</p>
+    <p>Faire une fonction qui prend deux paramètres : l'âge et le genre d'une personne. Le genre peut être :</p>
     <ul>
-        <li>l'afficher</li>
-        <li>l'incrementer</li>
+        <li>Homme</li>
+        <li>Femme</li>
+    </ul>
+    <p>La fonction doit renvoyer en fonction des paramètres :</p>
+    <ul>
+        <li>Vous êtes un homme et vous êtes majeur</li>
+        <li>Vous êtes un homme et vous êtes mineur</li>
+        <li>Vous êtes une femme et vous êtes majeure</li>
+        <li>Vous êtes une femme et vous êtes mineure</li>
     </ul>
 
     <p>===================================</p>
 
-    <p><?= $nombre ?></p>
+    <p><?= myfunction(27, "Femme") ?></p>
 
 
 </body>

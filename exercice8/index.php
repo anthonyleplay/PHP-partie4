@@ -1,7 +1,7 @@
 <?php
-$nombre = 0;
-while ($nombre < 10) {
-    $nombre ++;
+
+function myfunction($a, $b, $c) {
+    return $a + $b + $c;
     } ;
 ?>
 
@@ -13,22 +13,18 @@ while ($nombre < 10) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exo1</title>
+    <title>exo8</title>
 </head>
 
 <body>
-    <h1>Exercice 1</h1>
+    <h1>Exercice 8</h1>
 
-    <p>Créer une variable et l'initialiser à 0. <br>
-        Tant que cette variable n'atteint pas 10, il faut :</p>
-    <ul>
-        <li>l'afficher</li>
-        <li>l'incrementer</li>
-    </ul>
+    <p>Faire une fonction qui prend en paramètre trois nombres et qui renvoit la somme de ces nombres.  <br>
+        Tous les paramètres doivent avoir une valeur par défaut.</p>
 
     <p>===================================</p>
 
-    <p><?= $nombre ?></p>
+    <p><?= myfunction(12, 45, 78) ?></p>
 
 
 </body>
