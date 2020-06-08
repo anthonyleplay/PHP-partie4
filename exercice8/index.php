@@ -1,6 +1,6 @@
 <?php
 
-function myfunction($a = 0, $b = 0, $c = 0) {
+function addnumber($a = 0, $b = 0, $c = 0) {
     return $a + $b + $c;
     } ;
 ?>
@@ -24,7 +24,7 @@ function myfunction($a = 0, $b = 0, $c = 0) {
 
     <p>===================================</p>
 
-    <p><?= myfunction(12, 45, 78) ?></p>
+    <p><?= addnumber(12, 45, 78) ?></p>
 
 
 </body>
