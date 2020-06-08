@@ -1,9 +1,9 @@
 <?php
 
-function myfunction($a, $b) {
-    if($a > $b){
+function compare($numberA, $numberB) {
+    if($numberA > $numberB){
         return 'Le premier nombre est plus grand';
-    }else if($a < $b){
+    }else if($numberA < $numberB){
         return 'Le premier nombre est plus petit';
     }else {
         return 'Les deux nombres sont identiques';
@@ -34,7 +34,7 @@ function myfunction($a, $b) {
 
     <p>===================================</p>
 
-    <p><?= myfunction(3, 2) ?></p>
+    <p><?= compare(3, 2) ?></p>
 
 
 </body>

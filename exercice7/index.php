@@ -3,20 +3,23 @@ function myfunction($age, $gender) {
     switch ($gender) {
         case "Homme":
             if ($age >= 18) {
-                return "Vous êtes un homme et vous êtes majeur<br>";
+                $message = "Vous êtes un homme et vous êtes majeur<br>";
             }else{
-                return "Vous êtes un homme et vous êtes mineur<br>";
+                $message = "Vous êtes un homme et vous êtes mineur<br>";
             }
           break;
         case "Femme":
             if ($age >= 18) {
-                return "Vous êtes une femme et vous êtes majeure<br>";
+                $message = "Vous êtes une femme et vous êtes majeure<br>";
             }else {
-                return "Vous êtes une femme et vous êtes mineur<br>";
+                $message = "Vous êtes une femme et vous êtes mineur<br>";
             }
           break;
+        default :
+            $message = "entrer un genre valide ( Homme ou Femme ).";
         }
     }
+    return $message ;
 ?>
 
 

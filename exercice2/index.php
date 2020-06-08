@@ -1,6 +1,6 @@
 <?php
 $text = '';
-function myfunction($text) {
+function writeText($text) {
     return $text;
     } ;
 
@@ -24,7 +24,7 @@ function myfunction($text) {
 
     <p>===================================</p>
 
-    <p><?= myfunction("une chaine de caractères") ?></p>
+    <p><?= writeText("une chaine de caractères") ?></p>
 
 
 </body>

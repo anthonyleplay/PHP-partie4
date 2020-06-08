@@ -1,7 +1,7 @@
 <?php
 
-function myfunction($a, $b) {
-    return $a . ' ' . $b;
+function writeText($testPart1, $testPart2) {
+    return $testPart1 . ' ' . $testPart2;
     } ;
 ?>
 
@@ -23,7 +23,7 @@ function myfunction($a, $b) {
 
     <p>===================================</p>
 
-    <p><?= myfunction("une chaine", "de caractères") ?></p>
+    <p><?= writeText("une chaine", "de caractères") ?></p>
 
 
 </body>

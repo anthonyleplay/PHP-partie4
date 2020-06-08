@@ -1,7 +1,7 @@
 <?php
 
-function myfunction($a, $b) {
-    return $a . ' ' . $b;
+function writeText($textpart1, $textpart2) {
+    return $textpart1 . ' ' . $textpart2;
     } ;
 ?>
 

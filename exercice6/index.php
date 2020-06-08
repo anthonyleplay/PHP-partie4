@@ -1,6 +1,6 @@
 <?php
 
-function myfunction($lastname, $firstname, $age) {
+function writeText($lastname, $firstname, $age) {
     return  'Bonjour ' . $lastname . ' ' . $firstname . ' , tu as ' . $age . ' ans.';
     } ;
 ?>
@@ -24,7 +24,7 @@ function myfunction($lastname, $firstname, $age) {
 
     <p>===================================</p>
 
-    <p><?= myfunction('Le Play', 'Anthony', 33) ?></p>
+    <p><?= writeText('Le Play', 'Anthony', 33) ?></p>
 
 
 </body>
